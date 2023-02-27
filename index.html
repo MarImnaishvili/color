@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Welcome</h1>
+
+    <style>
+        h1{
+            color: #fff;
+            margin-top: 100px;
+        }
+        body{
+            text-align: center;
+            background-color: green;
+            height: 1500px;
+            transition: all .6s ease-in-out;
+        }
+    </style>
+    <script>
+        window.addEventListener('scroll',function(e){
+        let body = document.querySelector('body');
+        let y = Math.round(this.scrollY*2);
+        
+        // if ები რომ else if ების გარეშე დავწერე და მუშაობს, ნორმალურია ასე დატოვება?
+        if (y<250) {
+            body.style.backgroundColor = 'green';  
+        }
+
+        if (y>250 && y<500) {
+            body.style.backgroundColor = 'yellow';  
+        }
+
+        if (y>500 && y<750){
+            body.style.backgroundColor = 'blue';
+        } 
+
+        if (y>750 && y<1000){
+            body.style.backgroundColor = 'orange';   
+        }
+
+        if (y>1000 && y<1250){
+            body.style.backgroundColor = 'red';    
+        }
+
+        if (y>1250 && y<1500){
+            body.style.backgroundColor = 'purple';    
+        }
+       }
+)
+    </script>
+    
+</body>
+</html>
